@@ -1,4 +1,4 @@
-package com.example.andrinuryawan.architectureapps.view;
+package com.example.andrinuryawan.architectureapps.controller;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
