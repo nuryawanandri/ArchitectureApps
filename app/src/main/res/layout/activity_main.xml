@@ -20,19 +20,15 @@
             android:textSize="20dp"
             android:textColor="#FFFFFF"/>
 
-        <RelativeLayout
+        <Button
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Reset"
-                android:background="@color/colorPrimary"
-                android:textColor="#FFFFFF"
-                android:textSize="20dp"
-                android:layout_alignParentRight="true"
-                />
-        </RelativeLayout>
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:layout_gravity="right"
+            />
 
     </android.support.v7.widget.Toolbar>
 
