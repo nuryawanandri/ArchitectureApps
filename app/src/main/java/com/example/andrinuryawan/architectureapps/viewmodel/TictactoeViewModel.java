@@ -35,4 +35,8 @@ public class TictactoeViewModel {
     public void onResetTheGame () {
         boardModel.restart();
     }
+
+    public boolean isTheGameDraw () {
+        return boardModel.isDraw();
+    }
 }

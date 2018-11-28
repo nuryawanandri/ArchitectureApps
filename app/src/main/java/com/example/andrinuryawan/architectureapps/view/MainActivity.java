@@ -44,15 +44,13 @@ public class MainActivity extends AppCompatActivity {
             button.setText(currentPlayer);
         }
 
-//        Intent intent;
-//        intent = new Intent(this, WinnerActivity.class);
-//        intent.putExtra("msg", "Winner");
-//
-//        startActivity(intent);
-
         String winner = tictactoeViewModel.getWinner();
         if (winner != null) {
-            textView.setText("winner : " + winner);
+            textView.setText("Winner : " + winner);
+        }
+
+        if (tictactoeViewModel.isTheGameDraw()) {
+            textView.setText("DRAW!!!");
         }
 
     }

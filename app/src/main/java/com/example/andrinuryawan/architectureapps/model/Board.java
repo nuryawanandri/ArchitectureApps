@@ -10,6 +10,7 @@ public class Board {
     private GameState state;
     private Player winner;
     private Player currentPlayer;
+    private Integer countInput;
 
     private enum GameState {IN_PROGRESS, FINISHED};
 
@@ -22,6 +23,7 @@ public class Board {
         clearCell();
         currentPlayer = Player.X;
         state = GameState.IN_PROGRESS;
+        countInput = 0;
     }
 
     public void clearCell () {
@@ -45,6 +47,7 @@ public class Board {
             } else {
                 changeCurrentPlayer();
             }
+            countInput++;
         }
 
         return movedPlayer;
@@ -84,6 +87,10 @@ public class Board {
 
     public Player getWinner () {
         return winner;
+    }
+
+    public boolean isDraw () {
+        return countInput == 9;
     }
 
 }
