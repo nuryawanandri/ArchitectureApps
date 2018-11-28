@@ -1,4 +1,3 @@
 package com.example.andrinuryawan.architectureapps.model;
 
-public class Player {
-}
+public enum Player {X, O};

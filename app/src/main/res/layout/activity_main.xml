@@ -23,6 +23,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:onClick="onReset"
             android:text="Reset"
             android:background="@color/colorPrimary"
             android:textColor="#FFFFFF"
@@ -48,57 +49,87 @@
             android:columnCount="3">
 
             <Button
+                android:tag="00"
+                android:id="@+id/btn1"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
             <Button
+                android:tag="01"
+                android:id="@+id/btn2"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
             <Button
+                android:tag="02"
+                android:id="@+id/btn3"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
             <Button
+                android:tag="10"
+                android:id="@+id/btn4"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
             <Button
+                android:tag="11"
+                android:id="@+id/btn5"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
             <Button
+                android:tag="12"
+                android:id="@+id/btn6"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
             <Button
+                android:tag="20"
+                android:id="@+id/btn7"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
             <Button
+                android:tag="21"
+                android:id="@+id/btn8"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
             <Button
+                android:tag="22"
+                android:id="@+id/btn9"
+                android:onClick="markButton"
                 android:layout_width="100dp"
+                android:textSize="30dp"
                 android:layout_height="100dp" />
 
         </GridLayout>
 
         <TextView
+            android:id="@+id/playerWinDesc"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="X"
+            android:text=""
             android:textSize="40dp"
             android:textAlignment="center"
             android:layout_marginTop="30dp"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Winner"
-            android:textSize="40dp"
-            android:textAlignment="center"/>
 
     </LinearLayout>
 
